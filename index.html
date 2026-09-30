@@ -29,6 +29,7 @@
             left: 0;
             top: 10px;
             text-align: left;
+            margin: (10px, 10px);
         }
 
         .search {
@@ -140,7 +141,7 @@
         <div class="title" align="center">The Internet Times</div>
         <script>
             const now = new Date();
-            document.getElementById('currentdate').innerHTML = `${now.toLocaleDateString('en-US', { weekday: 'short' })}<br>${now.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`;
+            document.getElementById('currentdate').innerHTML = `  ${now.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}`;
         </script>
     </header>
     <hr>
